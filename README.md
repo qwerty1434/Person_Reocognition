@@ -2,7 +2,7 @@
 공식 홈페이지(https://pjreddie.com/media/files/yolov2.weights) 에서 다운받은 후 이름을 yolo.weights로 변경해 준다
 
 ## 실행 방법 
-> python manage.py runserver 
+> python manage.py runserver 0.0.0.0:8000
 
 
 
