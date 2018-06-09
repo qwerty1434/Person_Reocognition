@@ -1,0 +1,4 @@
+주소: https://www.youtube.com/watch?v=PyjBd7IDYZs
+실행법: darkflow-master에서/ python flow --model cfg/yolo.cfg --load bin/yolo.weights --demo filename --saveVideo
+
+이미지 실행법: darflow-master에서/ python flow --model cfg/yolo.cfg --load bin/yolo.weights --imgdir 이미지가 모여있는 폴더 위치

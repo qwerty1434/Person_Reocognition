@@ -1,0 +1,6 @@
+Invalid HTTP_HOST header: '61.85.36.59:8000'. You may need to add '61.85.36.59' to ALLOWED_HOSTS.
+[23/May/2018 11:38:58] "GET /poll HTTP/1.1" 400 58038
+Invalid HTTP_HOST header: '61.85.36.59:8000'. You may need to add '61.85.36.59' to ALLOWED_HOSTS.
+[23/May/2018 11:38:58] "GET /favicon.ico HTTP/1.1" 400 58078
+2018-06-09 07:57:01.619749: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+[09/Jun/2018 07:57:13] "POST /polls/upload_file/ HTTP/1.1" 200 73
