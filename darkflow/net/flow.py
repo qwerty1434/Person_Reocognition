@@ -89,16 +89,12 @@ def return_predict(self, im):
         tmpBox = self.framework.process_box(box, h, w, threshold)
         if tmpBox is None:
             continue
-        boxesInfo.append({
-            "label": tmpBox[4],
-            "confidence": tmpBox[6],
-            "topleft": {
-                "x": tmpBox[0],
-                "y": tmpBox[2]},
-            "bottomright": {
-                "x": tmpBox[1],
-                "y": tmpBox[3]}
-        })
+        if tmpBox[4] == 'person' and tmpBox[6] > 0.5:
+            boxesInfo.append({
+                "label": tmpBox[4],
+                "confidence": float(tmpBox[6])
+            })
+
     return boxesInfo
 
 import math

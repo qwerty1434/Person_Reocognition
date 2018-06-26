@@ -42,17 +42,8 @@ def cliHandler(image_name):
 #    tfnet.predict() #// 원본
     import cv2
 
-    im = '/Django-Yolo/photos/'+str(image_name) #이미지가 저장된 폴더 위치 + POST형식으로 받은 이미지 이름
-
-    result = {}
-    for i in range(len(tfnet.return_predict(cv2.imread(im)))):        
-        person_exist=False
-        if tfnet.return_predict(cv2.imread(im))[i]['confidence'] >0.5: #신뢰도가 50%이상이면 결과로 반환해 준다
-            if tfnet.return_predict(cv2.imread(im))[i]['label'] == "person": #사람인지 판단한다
-                person_exist = True
-            result.update({i:{'label':tfnet.return_predict(cv2.imread(im))[i]['label'],'confidence':str(tfnet.return_predict(cv2.imread(im))[i]['confidence']),'is_person':person_exist}})
-            if person_exist == True: #사람이 있으면 알고리즘을 끝낸다
-                break;
+    im = '/home/ml/Person_Reocognition/photos/'+str(image_name) #이미지가 저장된 폴더 위치 + POST형식으로 받은 이미지 이름
+    result = tfnet.return_predict(cv2.imread(im))   
+    print(result) 
     result = json.dumps(result) #json형태로 반환
-    #모든 데이터를 넘기는게 아니라 그냥 person유무만 넘겨줘도 될 거 같습니다
     return result
