@@ -22,7 +22,7 @@ class argHandler(dict):
         self.define('train', False, 'train the whole net')
         self.define('load', './bin/yolo.weights', 'how to initialize the net? Either from .weights or a checkpoint, or even from scratch')#./bin/yolo.weights
         self.define('savepb', False, 'save net and weight to a .pb file')
-        self.define('gpu', 1.0, 'how much gpu (from 0.0 to 1.0)')
+        self.define('gpu', 0.5, 'how much gpu (from 0.0 to 1.0)')
         self.define('gpuName', '/gpu:1', 'GPU device name')
         self.define('lr', 1e-5, 'learning rate')
         self.define('keep',20,'Number of most recent training results to save')
