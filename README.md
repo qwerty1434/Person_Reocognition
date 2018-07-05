@@ -4,7 +4,7 @@ yolo와 django를 사용하는 형태의 이미지 분석 api 입니다.
 ## 설치
 * 기본적으로 필요한 패키지는 cuda(gpu를 사용할 거라면), opencv, yolo, Django 입니다.
 * 다음 두 가지 방법중 하나로 패키지를 설치하면 됩니다.
-1. pip install requirements.txt
+1. pip install -r requirements.txt
 
 2. manage.py 를 실행시켜 (명령어: python manage.py runserver) 필요하다고 나오는 사항들을 설치합니다.
 
