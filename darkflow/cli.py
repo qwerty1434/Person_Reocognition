@@ -39,11 +39,10 @@ def cliHandler(image_name):
         print('Rebuild a constant version ...')
         tfnet.savepb(); exit('Done')
 
-#    tfnet.predict() #// 원본
+
     import cv2
 
     im = '/home/ml/Person_Reocognition/photos/'+str(image_name) #이미지가 저장된 폴더 위치 + POST형식으로 받은 이미지 이름
     result = tfnet.return_predict(cv2.imread(im))   
-    print(result) 
     result = json.dumps(result) #json형태로 반환
     return result
