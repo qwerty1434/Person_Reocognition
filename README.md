@@ -20,7 +20,9 @@ yolo와 django를 사용하는 형태의 이미지 분석 api
 * 0.0.0.0으로 실행하면 외부에서도 서버에 접속할 수 있다 
 * 8000이외의 포트를 뚫어 사용해도 상관없다
 
-
+## 결과 
+[{"label":ㅁㅁ,"confidence":0.00},...]형태의 json 값을 반환합니다
+전송한 이미지 파일은 photos폴더에 저장됩니다
 
 ## yolo 출처 
 * https://pjreddie.com/darknet/yolo/
