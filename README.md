@@ -9,7 +9,7 @@ yolo와 django를 사용하는 형태의 이미지 분석 api 입니다.
 2. manage.py 를 실행시켜 (명령어: python manage.py runserver) 필요하다고 나오는 사항들을 설치합니다.
 
 ## weights 추가
-* github에 용량이 큰 weights파일이 올라가지 않기 때문에 따로 다운받아서 bin폴더에 넣어줘야 합니다.
+* 용량초과로 github에 weights파일을 같이 올리지 못했습니다. 직접 파일을 다운받아서 bin폴더에 넣어주면 됩니다.
 
 * 다음 두 가지 방법중 하나로 weights파일을 다운받으면 됩니다.
 1. 공식 홈페이지(https://pjreddie.com/darknet/yolo/) 에서 YOLOv2 608x608를 다운받은 후 이름을 yolo.weights로 변경합니다.
