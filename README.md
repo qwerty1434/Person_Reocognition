@@ -6,7 +6,7 @@ yolo와 django를 사용하는 형태의 이미지 분석 api
 * 다음 두 가지 방법중 하나로 패키지를 설치한다
 1. pip install requirements.txt
 
-2. manage.py 를 실행시켜 (명령어: python manage.py runserver) 필요하다고 나오는 사항들을 설치해 주면 된다.
+2. manage.py 를 실행시켜 (명령어: python manage.py runserver) 필요하다고 나오는 사항들을 설치
 
 ## weights 추가
 * github에 용량이 큰 weights파일이 올라가지 않기 때문에 따로 다운받아서 bin폴더에 넣어줘야 한다
