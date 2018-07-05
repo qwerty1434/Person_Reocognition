@@ -29,6 +29,6 @@ yolo와 django를 사용하는 형태의 이미지 분석 api 입니다.
 * https://pjreddie.com/darknet/yolo/
 
 ## 기타 사항들
-* yolo의 기본설치는 https://www.youtube.com/watch?v=PyjBd7IDYZs 를 참고해서 진행했습니다.
-* yolo와 django를 합치는 과정에서 인자로 입력해야 하는 값들을 defaults.py파일에 기본값으로 넣어서 실행시켰습니다.
+* yolo의 기본설치는 https://www.youtube.com/watch?v=PyjBd7IDYZs 를 참고했습니다.
+* yolo와 django를 합치는 과정에서 인자로 입력해야 하는 값들을 defaults.py파일에 기본값으로 넣습니다.
 * 초기작업 내용 : https://github.com/qwerty1434/Django-Yolo
