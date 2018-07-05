@@ -13,7 +13,8 @@ yolo와 django를 사용하는 형태의 이미지 분석 api
 * 다음 두 가지 방법중 하나로 weights파일을 다운받는다
 1. 공식 홈페이지(https://pjreddie.com/darknet/yolo/) 에서 YOLOv2 608x608를 다운받은 후 이름을 yolo.weights로 변경한다
 
-2. 명령창에서 다운받는 방법 : curl -o yolo.weights https://pjreddie.com/media/files/yolov2.weights
+2. 명령창에서 다운받는 방법 : 
+> curl -o yolo.weights https://pjreddie.com/media/files/yolov2.weights
 
 ## 실행 방법 
 > python manage.py runserver 0.0.0.0:8000
