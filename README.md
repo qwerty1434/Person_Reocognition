@@ -12,7 +12,7 @@ yolo와 django를 사용하는 형태의 이미지 분석 api 입니다.
 * github에 용량이 큰 weights파일이 올라가지 않기 때문에 따로 다운받아서 bin폴더에 넣어줘야 합니다.
 
 * 다음 두 가지 방법중 하나로 weights파일을 다운받으면 됩니다.
-1. 공식 홈페이지(https://pjreddie.com/darknet/yolo/) 에서 YOLOv2 608x608를 다운받은 후 이름을 yolo.weights로 변경해 줍니다.
+1. 공식 홈페이지(https://pjreddie.com/darknet/yolo/) 에서 YOLOv2 608x608를 다운받은 후 이름을 yolo.weights로 변경합니다.
 2. 명령창에서 다운받는 방법 : 
 > curl -o yolo.weights https://pjreddie.com/media/files/yolov2.weights
 
