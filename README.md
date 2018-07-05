@@ -30,5 +30,8 @@ yolo와 django를 사용하는 형태의 이미지 분석 api 입니다.
 
 ## 기타 사항들
 * yolo의 기본설치는 https://www.youtube.com/watch?v=PyjBd7IDYZs 를 참고했습니다.
-* yolo와 django를 합치는 과정에서 인자로 입력해야 하는 값들을 defaults.py파일에 기본값으로 넣습니다.
+* yolo와 django를 합치는 과정에서 인자로 입력해야 하는 값들을 defaults.py파일에 기본값으로 넣었습니다.
+* polls/views.py에서 POST방식으로 받은 파일을 yolo로 실행하고 그 결과값을return하는 구조입니다.
+* cli.py에서 저장된 이미지를 im 변수로 받고 해당 변수를 return_predict()를 통해 분석합니다.
+* darkflow/net/flow.py의 return_predict()에서 label이 Person이고 confidence가 50%이상인 값들만 넘기도록 설정했습니다.
 * 초기작업 내용 : https://github.com/qwerty1434/Django-Yolo
