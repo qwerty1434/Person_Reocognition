@@ -3,6 +3,7 @@ yolo와 django를 사용하는 형태의 이미지 분석 api 입니다.
 
 ## 설치
 * 기본적으로 필요한 패키지는 cuda(gpu를 사용할 거라면), opencv, yolo, Django 입니다.
+
 * 다음 두 가지 방법중 하나로 패키지를 설치하면 됩니다.
 1. pip install -r requirements.txt (단, 불필요한 패키지도 많이 있습니다)
 
@@ -10,6 +11,7 @@ yolo와 django를 사용하는 형태의 이미지 분석 api 입니다.
 
 ## weights 추가
 * github에 용량이 큰 weights파일이 올라가지 않기 때문에 따로 다운받아서 bin폴더에 넣어줘야 합니다.
+
 * 다음 두 가지 방법중 하나로 weights파일을 다운받으면 됩니다.
 1. 공식 홈페이지(https://pjreddie.com/darknet/yolo/) 에서 YOLOv2 608x608를 다운받은 후 이름을 yolo.weights로 변경해 줍니다.
 
