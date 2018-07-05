@@ -89,6 +89,7 @@ def return_predict(self, im):
         tmpBox = self.framework.process_box(box, h, w, threshold)
         if tmpBox is None:
             continue
+	#person이고 confidence가 50%이상인 경우가 발생하면 return
         if tmpBox[4] == 'person' and tmpBox[6] > 0.5:
             boxesInfo.append({
                 "label": tmpBox[4],
